@@ -33,7 +33,7 @@ $$
 But with simple returns
 
 $$
-x \cdot 50 \% \cdot -50 \% \neq x
+x \cdot 0.5 \cdot -0.5 \neq x
 $$
 
 Log are also a rewrite of $P(t)=P_0e^t$, modeling growth as a continuous function, which is ideal for the integration techniques we will use when calculating probability.
