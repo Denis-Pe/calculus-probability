@@ -36,4 +36,4 @@ $$
 x \cdot 0.5 \cdot -0.5 \neq x
 $$
 
-Log are also a rewrite of $P(t)=P_0e^{kt}$ where $k$ is our log return, modeling growth as a continuous function, which is ideal for the integration techniques we will use when calculating probability.
+Log returns are also a rewrite of $P(t)=P_0e^{kt}$ where $k$ is our log return, modeling growth as a continuous function, which is ideal for the integration techniques we will use when calculating probability.
