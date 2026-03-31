@@ -9,7 +9,7 @@ Because the prices of financial assets are uncertain, we will model them as rand
 The _simple return_ over the time period is
 
 $$
-R_s = \frac{P_1-P_0}{P_0} = \frac{P_1}{p_0} - 1
+R_s = \frac{P_1-P_0}{P_0} = \frac{P_1}{P_0} - 1
 $$
 
 The _log return_ over the time period is
