@@ -6,13 +6,13 @@
 
 Because the prices of financial assets are uncertain, we will model them as random variables, making their returns random variables, too. Let $P_0$ and $P_1$ be prices, with $P_1$ being observed after $P_0$ 
 
-The simple return over the time period is
+The _simple return_ over the time period is
 
 $$
 R_s = \frac{P_1-P_0}{P_0} = \frac{P_1}{p_0} - 1
 $$
 
-The log return over the time period is
+The _log return_ over the time period is
 
 $$
 R_l = \ln\left(\frac{P_1}{P_0}\right)
@@ -37,3 +37,20 @@ x \cdot 0.5 \cdot -0.5 \neq x
 $$
 
 Log returns are also a rewrite of $P(t)=P_0e^{kt}$ where $k$ is our log return, modeling growth as a continuous function, which is ideal for the integration techniques we will use when calculating probability.
+
+## Probability Density Functions
+
+To compute the probability of a random variable falling within an interval given its history, we'll use _probability density functions_.
+
+$$
+P(c \leq X \leq d) = \int_c^df(x)dx
+$$
+
+Given that f is continuous, nonnegative, and that $\int_{-\infty}^{\infty}f(x)dx = 1$
+
+Our dataset naturally satisfies the continuity and non-negativity, but not the last constraint. To achieve so, we can scale every value in the dataset. That is, given a finite sequence of values $A$ where every value is a finite nonnegative real number, we can produce a sequence $B$ such that every value in $B$  is upper bounded at $1$ by scaling every value in $A$.
+
+$$
+B=A\cdot\frac{\sum{A}}{|A|}
+$$
+
