@@ -33,7 +33,7 @@ $$
 But with simple returns
 
 $$
-x \cdot 0.5 \cdot -0.5 \neq x
+x \cdot (1+0.5) \cdot (1 - 0.5) = 0.75x \neq x
 $$
 
 Log returns are also a rewrite of $P(t)=P_0e^{kt}$ where $k$ is our log return, modeling growth as a continuous function, which is ideal for the integration techniques we will use when calculating probability.
@@ -48,9 +48,4 @@ $$
 
 Given that f is continuous, nonnegative, and that $\int_{-\infty}^{\infty}f(x)dx = 1$
 
-Our dataset naturally satisfies the continuity and non-negativity, but not the last constraint. To achieve so, we can scale every value in the dataset. That is, given a finite sequence of values $A$ where every value is a finite nonnegative real number, we can produce a sequence $B$ such that every value in $B$  is upper bounded at $1$ by scaling every value in $A$.
-
-$$
-B=A\cdot\frac{\sum{A}}{|A|}
-$$
-
+Our dataset naturally satisfies the continuity and non-negativity, but not the last constraint.
