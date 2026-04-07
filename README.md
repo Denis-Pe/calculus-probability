@@ -1,8 +1,8 @@
 # Probability Density Functions and Cumulative Density Functions: Using Calculus for Insights into Cryptocurrency Markets
 
-# Mathematical and Financial Preliminaries
+## Mathematical and Financial Preliminaries
 
-## Returns
+### Returns
 
 Because the prices of financial assets are uncertain, we will model them as random variables, making their returns random variables, too. Let $P_0$ and $P_1$ be prices, with $P_1$ being observed after $P_0$ 
 
@@ -38,7 +38,7 @@ $$
 
 Log returns are also a rewrite of $P(t)=P_0e^{kt}$ where $k$ is our log return, modeling growth as a continuous function, which is ideal for the integration techniques we will use when calculating probability.
 
-## Probability Density Functions
+### Probability Density Functions
 
 To compute the probability of a random variable falling within an interval given its history, we'll use _probability density functions_.
 
@@ -49,3 +49,8 @@ $$
 Given that f is continuous, nonnegative, and that $\int_{-\infty}^{\infty}f(x)dx = 1$
 
 Our dataset naturally satisfies the continuity and non-negativity, but not the last constraint.
+
+
+## Sources
+
+Returns: https://gregorygundersen.com/blog/2022/02/06/log-returns/
