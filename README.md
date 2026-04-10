@@ -46,10 +46,7 @@ $$
 P(c \leq X \leq d) = \int_c^df(x)dx
 $$
 
-Given that f is continuous, nonnegative, and that $\int_{-\infty}^{\infty}f(x)dx = 1$
-
-Our dataset naturally satisfies the continuity and non-negativity, but not the last constraint.
-
+Given that f is continuous or has a finite number of discontinuities, nonnegative, and that $\int_{-\infty}^{\infty}f(x)dx = 1$.
 
 ## Sources
 
