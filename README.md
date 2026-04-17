@@ -2,6 +2,24 @@
 
 ## Mathematical and Financial Preliminaries
 
+### Statistical Metrics
+
+These are some common statistical metrics that we will refer to throughout the paper.
+
+Taking $x_n$ as a series of values, with $N$ as the number of values in the series.
+
+The **mean average**, $\mu$ is defined as
+
+$$
+\mu=\frac{\sum_{n=1}^{N}{x_n}}{N}
+$$
+
+The **standard deviation** of the same given dataset, $\sigma$ is defined as
+
+$$
+\sigma=\sqrt{\frac{\sum_{n=1}^{N}{(x_n-\mu)^2}{}}{N}}
+$$
+
 ### Returns
 
 Because the prices of financial assets are uncertain, we will model them as random variables, making their returns random variables, too. Let $P_0$ and $P_1$ be prices, with $P_1$ being observed after $P_0$ 
@@ -38,25 +56,9 @@ $$
 
 Log returns are also a rewrite of $P(t)=P_0e^{kt}$ where $k$ is our log return, modeling growth as a continuous function, which is ideal for the integration techniques we will use when calculating probability.
 
-### Statistical Metrics
-
-Let $x_n$ be a series of values, with $N$ as the number of values in the series.
-
-The **mean average**, $\mu$ is defined as
-
-$$
-\mu=\frac{\sum_{n=1}^{N}{x_n}}{N}
-$$
-
-The **standard deviation** of the same given dataset, $\sigma$ is defined as
-
-$$
-\sigma=\sqrt{\frac{\sum_{n=1}^{N}{(x_n-\mu)^2}{}}{N}}
-$$
-
 ### Probability Density Functions
 
-To compute the probability of a random variable falling within an interval given its history, we'll use _probability density functions_.
+To compute the probability of a random variable, such as the prices or returns of our assets, falling within an interval given its history, we'll use _probability density functions_.
 
 $$
 P(c \leq X \leq d) = \int_c^df(x)dx
@@ -73,6 +75,12 @@ f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-(x-\mu)^2/2\sigma^2}
 $$
 
 Using a normal distribution has the assumption that the mean of our dataset is its expected value with equal variance in the negative and positive directions.
+
+## Execution
+
+### Data
+
+All data used in this analysis will come from the REST API offered by Coinbase.
 
 ## Sources
 
