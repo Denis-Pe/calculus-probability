@@ -96,7 +96,7 @@ We can justify using the normal distribution because mainstream cryptocurrencies
 
 ![btc_scatter_2021_2026.png](plots/btc_scatter_2021_2026.png)
 
-Next we can look at the Q-Q plot for the same dataset. We once again observe the symmetry of the distribution. Given the shape of the plot, one well-known feature of cryptocurrency becomes more apparent: cryptocurrency has fat tails, i.e. extreme events are very common.
+Next we can look at the Q-Q plot for the same dataset. We once again observe the symmetry of the distribution.  Additionally, given the shape of the plot, one well-known feature of cryptocurrency becomes more apparent: cryptocurrency has fat tails, i.e. extreme events are very common.
 
 ![btc_qq_2021_2026.png](plots/btc_qq_2021_2026.png)
 
