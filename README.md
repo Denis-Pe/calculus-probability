@@ -76,11 +76,37 @@ $$
 
 Using a normal distribution has the assumption that the mean of our dataset is its expected value with equal variance in the negative and positive directions.
 
-## Execution
+## Technical Details
 
 ### Data
 
-All data used in this analysis will come from the REST API offered by Coinbase.
+All data is sourced from Gemini in https://www.cryptodatadownload.com.
+
+https://www.cryptodatadownload.com/data/gemini/
+
+In this analysis, we look at the prices for BTC and ETH for the last ten years.
+
+## Findings and Execution
+
+### Justifying Assumptions
+
+#### Normal Distribution
+
+We can justify using the normal distribution because mainstream cryptocurrencies tend to have equal variance in both directions. Here is a scatter plot of Bitcoin's simple returns from 2021 to 2026, showing this pattern.
+
+![btc_scatter_2021_2026.png](plots/btc_scatter_2021_2026.png)
+
+Next we can look at the Q-Q plot for the same dataset. We once again observe the symmetry of the distribution. Given the shape of the plot, one well-known feature of cryptocurrency becomes more apparent: cryptocurrency has fat tails, i.e. extreme events are very common.
+
+![btc_qq_2021_2026.png](plots/btc_qq_2021_2026.png)
+
+We observe similar behavior on Ethereum.
+
+![eth_scatter_2022_2026.png](plots/eth_scatter_2022_2026.png)
+
+![eth_qq_2022_2026.png](plots/eth_qq_2022_2026.png)
+
+
 
 ## Sources
 
