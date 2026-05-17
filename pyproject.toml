@@ -12,7 +12,8 @@ dependencies = [
     "numpy",
     "scipy",
     "scipy-stubs (>=1.17.1,<1.18.0)",
-    "pytz"
+    "pytz",
+    "tzdata"
 ]
 
 

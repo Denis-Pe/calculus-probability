@@ -94,17 +94,23 @@ In this analysis, we look at the prices for BTC and ETH for the last ten years.
 
 We can justify using the normal distribution because mainstream cryptocurrencies tend to have equal variance in both directions. Here is a scatter plot of Bitcoin's simple returns from 2021 to 2026, showing this pattern.
 
-![btc_scatter_2021_2026.png](plots/btc_scatter_2021_2026.png)
+![btc_scatter_2021_2026_hourly.png](plots/btc_scatter_2021_2026_hourly.png)
 
 Next we can look at the Q-Q plot for the same dataset. We once again observe the symmetry of the distribution.  Additionally, given the shape of the plot, one well-known feature of cryptocurrency becomes more apparent: cryptocurrency has fat tails, i.e. extreme events are very common.
 
-![btc_qq_2021_2026.png](plots/btc_qq_2021_2026.png)
+![btc_qq_2021_2026_hourly.png](plots/btc_qq_2021_2026_hourly.png)
+
+For a more detailed view, we can look at the same graphs on daily returns from May 2023 to May 2026 and see the same behavior.
+
+![btc_scatter_2023_2026_daily.png](plots/btc_scatter_2023_2026_daily.png)
+
+![btc_qq_2023_2026_daily.png](plots/btc_qq_2023_2026_daily.png)
 
 We observe similar behavior on Ethereum.
 
-![eth_scatter_2022_2026.png](plots/eth_scatter_2022_2026.png)
+![eth_scatter_2022_2026_hourly.png](plots/eth_scatter_2022_2026_hourly.png)
 
-![eth_qq_2022_2026.png](plots/eth_qq_2022_2026.png)
+![eth_qq_2022_2026_hourly.png](plots/eth_qq_2022_2026_hourly.png)
 
 
 

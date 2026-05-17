@@ -14,26 +14,23 @@ def simple_return(p0, p1):
     return (p1 - p0) / p0
 
 all_candles = []
-with open("./historical_data/Gemini_ETHUSD_1h.csv") as csv_file:
+with open("./historical_data/Gemini_BTCUSD_d.csv") as csv_file:
     csv_reader = csv.DictReader(csv_file, )
     for row in csv_reader:
         all_candles.append(row)
 
 ## Scatterplot
 
-candles = all_candles[:len(all_candles)-50000]
-xs[-1]
+candles = all_candles[:365*3]
 xs = [datetime.fromtimestamp(int(c['unix'])/1000, zoneinfo.ZoneInfo('America/New_York')) for c in candles]
 xs = xs[1:]
+xs[-1]
 # ys = [float(c['close']) for c in candles]
 ys = []
 for i in range(1, len(candles)):
     prev = candles[i-1]['close']
     curr = candles[i]['close']
     ys.append(simple_return(float(prev), float(curr)) * 100.0)
-
-np.mean(ys)
-np.median(ys)
 
 plt.scatter(xs, ys)
 
@@ -43,7 +40,7 @@ plt.show()
 
 ## Q-Q plot
 
-candles = all_candles[:len(all_candles)-50000]
+candles = all_candles[:365*3]
 datapoints = []
 for i in range(1, len(candles)):
     prev = candles[i-1]['close']
