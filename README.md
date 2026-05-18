@@ -80,11 +80,11 @@ Using a normal distribution has the assumption that the mean of our dataset is i
 
 ### Data
 
-All data is sourced from Gemini in https://www.cryptodatadownload.com.
+All data is sourced from Gemini in https://www.cryptodatadownload.com:
 
 https://www.cryptodatadownload.com/data/gemini/
 
-In this analysis, we look at the prices for BTC and ETH for the last ten years.
+In this analysis, we generally look at the prices for BTC and ETH over the last 5 years on a daily and hourly granularity.
 
 ## Findings and Execution
 
